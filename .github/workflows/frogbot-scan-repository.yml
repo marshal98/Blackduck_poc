@@ -2,8 +2,7 @@ name: "Frogbot Scan Repository"
 on:
     push:
       branches:
-        - main  # Replace 'main' with the branch you want to trigger on push
-        # - develop  # Uncomment and add more branches if needed  
+        - master  # The workflow will trigger on pushes to the 'master' branch  
 permissions:
   contents: write
   pull-requests: write

@@ -20,10 +20,10 @@ jobs:
       run: mvn spotless:check
     - name: Create WAR
       run: mvn package
-    - name: blackduck scan
-      run: bash <(curl -s https://detect.synopsys.com/detect9.sh)
-        --blackduck.url=https://bdscan-int.i.mercedes-benz.com/
-        --blackduck.api.token="${{secrets.BLACKDUCK_API_TOKEN}}"
-        --detect.project.name="Test-GNAILWA"
-        --detect.project.version.name="v1"
-        --detect.code.location.name="Test-GNAILWA"-"v1"
+#    - name: blackduck scan
+#      run: bash <(curl -s https://detect.synopsys.com/detect9.sh)
+#        --blackduck.url=https://bdscan-int.i.mercedes-benz.com/
+#        --blackduck.api.token="${{secrets.BLACKDUCK_API_TOKEN}}"
+#        --detect.project.name="Test-GNAILWA"
+#        --detect.project.version.name="v1"
+#        --detect.code.location.name="Test-GNAILWA"-"v1"
